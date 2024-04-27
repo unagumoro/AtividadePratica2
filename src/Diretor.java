@@ -1,25 +1,25 @@
 public class Diretor extends Funcionario{
-    private String coco;
+    private int experiencia;
 
     public Diretor() {
     }
 
-    public Diretor(int matricula, String nome, String coco) {
+    public Diretor(int matricula, String nome, int experiencia) {
         super(matricula, nome);
-        this.coco = coco;
+        this.experiencia = experiencia;
     }
 
-    public String getCoco() {
-        return coco;
+    public int getExperiencia() {
+        return experiencia;
     }
 
-    public void setCoco(String coco) {
-        this.coco = coco;
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
     }
 
     @Override
     public String toString() {
         return super.toString() +
-                "\nCoco: " + coco;
+                "\nExperiência: " + experiencia;
     }
 }
